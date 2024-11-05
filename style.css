@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(32, 32, 46);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: rgb(20, 20, 30);
+    font-size: 48px;
+    text-align: center;
+    padding: 20px;
+}
+
+#game-element{
+    width: 800px;
+    height: 800px;
+    background-color: rgb(56, 56, 80);
+    border: 3px solid rgb(20, 20, 30);
+    border-radius: 15px;
+    margin: 40px auto 20px auto;
+    display: grid;
+    place-items: center;
+}
+
+#game-object{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0 20px 0 rgb(183, 9, 0), 
+    0 15px 20px rgba(0,0,0,.8);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#game-object:hover{
+    background-color: rgb(235, 0, 0);
+}
+
+#game-object:active{
+    padding-top: 3px;
+    transform: translateY(4px);
+    box-shadow: 0 4px 0 rgb(183,0,0),
+      0 8px 6px rgba(0,0,0,.45);
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 48px;
+    text-shadow: 0 3px 1px rgba(122,17,8,.8);
+}
+
+#game-info{
+    padding-bottom: 40px;
+}
+
+.upgrade-title{
+    padding-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    font-size: 36px;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
