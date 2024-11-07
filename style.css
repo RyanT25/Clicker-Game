@@ -83,26 +83,47 @@ p{
     justify-content: center;
 }
 
-.upgrade-title{
-    padding-bottom: 20px;
-}
-
 .upgrade-tiles{
     width: 200px;
-    height: 100px;
+    height: 120px;
     margin: 20px;
     padding: 5px;
     background-color: rgb(56, 56, 80);
     border-radius: 15px;
     border: 3px solid rgb(20, 20, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upgrade-button{
+    width: 180px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 175, 0);
+    box-shadow: 0 5px 0 rgb(0, 105, 26), 
+    0 2px 5px rgba(0,0,0,.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.upgrade-button:hover{
+    background-color: rgb(0, 165, 0);
+}
+
+.upgrade-button:active{
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 rgb(0,105,0),
+      0 2px 1px rgba(0,0,0,.45);
 }
 
 h4{
     font-size: 24px;
-    text-align: center;
-    margin-bottom: 15px;
+    text-shadow: 0 3px 1px rgba(0, 90, 23, 0.8);
 }
 
-.upgrade-cost{
-    margin-bottom: 15px;
-}

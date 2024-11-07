@@ -8,7 +8,7 @@ let upgrade1Cost=15;
 let gameObject=document.getElementById('game-object');
 let scoreDisplay=document.getElementById('score');
 // * Upgrade 1 --
-let upgrade1=document.getElementById('upgrade1');
+let upgrade1=document.getElementById('upgrade1-button');
 let upgrade1Count=document.getElementById('num-of-upgrade1');
 let upgrade1CostUpdate=document.getElementById('upgrade1-cost');
 
@@ -33,7 +33,7 @@ upgrade1.addEventListener('click', addUpgrade1);
 
 // * Upgrade 1 Auto Click --
 function Upgrade1AddScore(){
-    num=num+(numOfUpgrade1*(numPerClick*0.2));
+    num=num+(numOfUpgrade1*(numPerClick*0.1));
     scoreDisplay.innerHTML=Math.trunc(num);
 };
 
